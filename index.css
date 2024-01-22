@@ -1,13 +1,13 @@
 body {
-    background: #f8f9fa;
-    color: #343a40;
+    background-color: #f4f4f4;
+    color: #333;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
 
 .navbar {
-    background: #007bff;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #69a3ff, #c4e1ff);
+    box-shadow: 0px 3px 15px rgba(255, 174, 92, 0.2);
 }
 
 .navbar-brand {
@@ -17,7 +17,7 @@ body {
 }
 
 .tab-content {
-    background: #fff;
+    background: linear-gradient(to right, #87cefa, #c4e1ff);
     border-radius: 15px;
     padding: 40px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@ body {
 }
 
 .webcam-box-outer {
-    background-color: #f8f9fa;
+    background: linear-gradient(to right, #68d89b, #a7e2b2);
     padding: 10px;
     border-radius: 15px;
     display: inline-block;
@@ -39,33 +39,31 @@ body {
 }
 
 .webcam-box-inner {
-    background-color: #fff;
+    background: #fff;
     border-radius: 15px;
     overflow: hidden;
 }
 
 .btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
+    color: #ff6b6b;
+    border-color: #ff6b6b;
     transition: background 0.5s, color 0.5s;
 }
 
 .btn-outline-primary:hover {
-    background: #0056b3;
+    background: #ff5252;
     color: #fff;
 }
 
-/* Add Feather icon sizes as needed */
 .feather {
     width: 20px;
     height: 20px;
     vertical-align: middle;
 }
 
-/* Style for the tab links */
 .nav-link {
     color: #fff;
-    background: #000;
+    background: linear-gradient(to right, #68d89b, #a7e2b2);
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
@@ -74,21 +72,19 @@ body {
 }
 
 .nav-link:hover {
-    background: #b5d8fe;
+    background: linear-gradient(to right, #4169e1, #87cefa);
     color: #fff;
 }
 
-/* Active tab style */
 .nav-link.active {
-    background: #0056b3;
+    background: #87cefa;
     color: #fff;
 }
 
-/* Sidebar style */
 .sidebar {
-    background: #343a40;
     color: #fff;
     padding-top: 20px;
+    border-radius: 12px;
 }
 
 @keyframes fadeInUp {
