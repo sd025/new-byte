@@ -383,8 +383,14 @@ async function predict() { // PREDICTS WEBCAM LIVE CAPTURES
   }
 };
 
-function startPredicting(){ // STARTS LIVE PREDICTION
+async function startPredicting(){ // STARTS LIVE PREDICTION
 	isPredicting = true;
+  try {
+    webcam = await tf.data.webcam(document.getElementById('predictWebcam'));
+  } catch (e) {
+    console.log(e);
+  }
+
 	predict();
 };
 

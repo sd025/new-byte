@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    </head>
+
+</head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4">
@@ -51,7 +52,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#step5">
-                                <span data-feather="download"></span> Playground
+                                <span data-feather="download"></span> Play
                             </a>
                         </li>
                     </ul>
@@ -199,7 +200,7 @@
                         <div class="row justify-content-center mb-4" id="video_frame">
                             <div class="webcam-box-outer">
                                 <div class="webcam-box-inner">
-                                    <video autoplay playsinline id="webcamPredict"  width="224" height="224"></video>
+                                    <video autoplay playsinline id="predictWebcam"  width="224" height="224"></video>
                                 </div>
                             </div>
                         </div>
@@ -264,6 +265,19 @@
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const navLinks = document.querySelectorAll('.nav-link');
+                const tabPanes = document.querySelectorAll('.tab-pane');
+
+                navLinks.forEach((link, index) => {
+                    link.addEventListener('click', () => {
+                        tabPanes.forEach(pane => pane.classList.remove('active'));
+                        tabPanes[index].classList.add('active');
+                    });
+                });
+            });
+        </script>
 </body>
 
 </html>
